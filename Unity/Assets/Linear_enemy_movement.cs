@@ -2,31 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Linear_enemy_movement : MonoBehaviour {
 
  public float speed;
+    public float distance;
  
 
     private bool MovingRight = true;
 
-    public transform WallDetection;
+    public Transform groundDetection;
 
-    void update() {
 
-        transform.translate(vector2.right * speed * time.deltatime);
+    void update(){
 
-        RaycastHit2D WallInfo = Physics2D.Raycast(WallDetection.position, Vector2.right, 2f);
-        if(WallInfo.collider == true)
+        transform.Translate (Vector2.right * speed * Time.deltaTime);
+
+        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+        if(groundinfo.collider == false)
         {
             if (MovingRight == true)
             {
-                transform.eulerAngles = new Vector3(0, -180, 0);
+                transform.eulerAngles = new Vector3 (0, -180, 0);
                 MovingRight = false;
             }
             else
-            { transform.eulerAngles = new Vector3(0, 0, 0);
-                movingright = true;
+            { transform.eulerAngles = new Vector3 (0, 0, 0);
+                MovingRight = true;
             }
         }
+
+
+
+
+
 	}
 }
