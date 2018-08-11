@@ -3,3 +3,4 @@ board game
 tetris-like inventory
 climbing
 cave - running out of O2
+tidying a room
