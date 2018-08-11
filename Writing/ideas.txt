@@ -1,3 +1,5 @@
 space endless runner
 board game
 tetris-like inventory
+climbing
+cave - running out of O2
