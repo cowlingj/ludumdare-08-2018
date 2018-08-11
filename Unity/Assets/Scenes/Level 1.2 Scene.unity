@@ -326,11 +326,6 @@ Prefab:
       propertyPath: m_Name
       value: Floor Section Type 2 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 23034213630323876, guid: 8ddb790856b13b0438adc1f609ce1d7b,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9c8aa0e4c66fca34b82c5137d2fe8512, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddb790856b13b0438adc1f609ce1d7b, type: 2}
   m_IsPrefabAsset: 0
@@ -737,6 +732,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor Section Type 1 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23118028816146200, guid: e5fb224b3eb06294da722b2610956e41,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9aa9ee84721eb7408ff140756a7d217, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fb224b3eb06294da722b2610956e41, type: 2}
   m_IsPrefabAsset: 0
@@ -825,6 +825,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 23034213630323876, guid: 8ddb790856b13b0438adc1f609ce1d7b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8b04144f147be6489581d4fc35eedca, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddb790856b13b0438adc1f609ce1d7b, type: 2}
   m_IsPrefabAsset: 0
@@ -1200,6 +1205,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor Section Type 1 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 23118028816146200, guid: e5fb224b3eb06294da722b2610956e41,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9aa9ee84721eb7408ff140756a7d217, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fb224b3eb06294da722b2610956e41, type: 2}
   m_IsPrefabAsset: 0
@@ -1334,6 +1344,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor Section Type 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 23034213630323876, guid: 8ddb790856b13b0438adc1f609ce1d7b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8b04144f147be6489581d4fc35eedca, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddb790856b13b0438adc1f609ce1d7b, type: 2}
   m_IsPrefabAsset: 0
