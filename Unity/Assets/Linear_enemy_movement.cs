@@ -25,7 +25,7 @@ public class NewBehaviourScript : MonoBehaviour {
             }
             else
             { transform.eulerAngles = new Vector3(0, 0, 0);
-            movingright = true
+                movingright = true;
             }
         }
 	}
