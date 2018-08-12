@@ -18,11 +18,12 @@ public class Linear_enemy_movement : MonoBehaviour {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
        
 
-        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
-        if(groundinfo.collider == null)
+        RaycastHit2D wallinfoleft = Physics2D.Raycast(groundDetection.position, Vector2.left, 0.5f);
+        RaycastHit2D wallinforight = Physics2D.Raycast(groundDetection.position, Vector2.right, 0.5f);
+        if (wallinfoleft.collider == null)
      
         {
-         //   Debug.Log("oi moron something's broken go fix it"); 
+          
             if (MovingRight == true)
             {
                 transform.eulerAngles = new Vector3 (0, -180, 0);
@@ -33,5 +34,35 @@ public class Linear_enemy_movement : MonoBehaviour {
                 MovingRight = true;
             }
         }
-	}
+        if (wallinfoleft.collider == null)
+     
+        {
+          
+            if (MovingRight == false)
+            {
+                transform.eulerAngles = new Vector3 (0, -180, 0);
+                MovingRight = false;
+            }
+            else
+            { transform.eulerAngles = new Vector3 (0, 0, 0);
+                MovingRight = true;
+            }
+        }
+
+        if (wallinforight.collider == null)
+
+        {
+
+            if (MovingRight == true)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                MovingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                MovingRight = true;
+            }
+        }
+    }
 }
